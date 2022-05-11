@@ -4,7 +4,8 @@ int count=0;
 
 int isChargeInRange(float chargeRate)
 {
-  chargeRate > 0.8?count:count++;
+  if(chargeRate > 0.8)
+//   ?count:count++;
   return count;
 }
 
