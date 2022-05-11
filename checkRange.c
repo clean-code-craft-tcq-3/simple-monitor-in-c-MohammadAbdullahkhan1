@@ -2,14 +2,16 @@
 
 int count=0;
 
-int isChargeInRange(float chargeRate)
+int isChargeNotInRange(float chargeRate)
 {
   if(chargeRate > 0.8)
-//   ?count:count++;
+  {
+    count++;
+  }
   return count;
 }
 
-int isStateInRange(float soc)
+int isStateNotInRange(float soc)
 {
     if(soc < 20 || soc > 80) 
     {
@@ -18,7 +20,7 @@ int isStateInRange(float soc)
     return count;
 }
 
-int isTempInRange(float temperature)
+int isTempNotInRange(float temperature)
 {
     if(temperature < 0 || temperature > 45) 
     {
