@@ -2,6 +2,8 @@
 #include <assert.h>
 #include "header.h"
 
+int count;
+
 int batteryIsOk(float temperature, float soc, float chargeRate) {
   count = isTempInRange(temperature);
   count = isStateInRange(soc);
