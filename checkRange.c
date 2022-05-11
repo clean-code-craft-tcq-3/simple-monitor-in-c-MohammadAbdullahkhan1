@@ -19,7 +19,6 @@ int isSocInRange(float soc)
 
 int isTemperatureInRange(float temperature)
 {
-    Std_ReturnType RetVal = E_OK;
     if(temperature < 0 || temperature > 45) 
     {
       count++;
