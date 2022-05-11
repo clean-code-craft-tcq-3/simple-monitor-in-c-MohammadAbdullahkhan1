@@ -5,9 +5,9 @@
 int count;
 
 int batteryIsOk(float temperature, float soc, float chargeRate) {
-  count = isTempInRange(temperature);
-  count = isStateInRange(soc);
-  count = isChargeInRange(chargeRate);
+  count = isTempNotInRange(temperature);
+  count = isStateNotInRange(soc);
+  count = isChargeNotInRange(chargeRate);
   return count;
 }
 
