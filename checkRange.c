@@ -2,26 +2,29 @@
 
 int count=0;
 
-void isChargeNotInRange(float chargeRate)
+int isChargeNotInRange(float chargeRate)
 {
   if(chargeRate > 0.8)
   {
     count++;
   }
+  return count;
 }
 
-void isStateNotInRange(float soc)
+int isStateNotInRange(float soc)
 {
     if(soc < 20 || soc > 80) 
     {
       count++;
     }
+  return count;
 }
 
-void isTempNotInRange(float temperature)
+int isTempNotInRange(float temperature)
 {
     if(temperature < 0 || temperature > 45) 
     {
       count++;
     }
+  return count;
 }
