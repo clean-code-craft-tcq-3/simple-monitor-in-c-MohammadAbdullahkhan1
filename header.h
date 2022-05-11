@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
 
-int isTempInRange(float temperature);
-int isStateInRange(float soc);
-int isChargeInRange(float chargeRate);
+int isTempNotInRange(float temperature);
+int isStateNotInRange(float soc);
+int isChargeNotInRange(float chargeRate);
 int batteryIsOk(float temperature, float soc, float chargeRate);
